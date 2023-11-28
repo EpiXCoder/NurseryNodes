@@ -1,0 +1,223 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+
+html {
+    font-family: 'Montserrat Alternates';
+    background-color: #fef7ce;
+    color: #3a1f13;
+}
+
+body {
+    max-width: 700px;
+    margin: auto;
+}
+
+.header-image{
+    width: 100%;
+    z-index: 100;
+}
+
+header {
+    position: relative;
+}
+
+.title1 {
+    position: absolute; /* Absolute position relative to header */
+    top: 5%; /* Centers vertically */
+    left: 68%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the exact center */
+    color: #3a1f13; /* Assuming white text for contrast */
+    z-index: 105;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.title2 {
+    position: absolute; /* Absolute position relative to header */
+    top: 20%; /* Centers vertically */
+    left: 75%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the exact center */
+    color: #3a1f13; /* Assuming white text for contrast */
+    z-index: 105;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.subtitle {
+    position: absolute; /* Absolute position relative to header */
+    top: 35%; /* Centers vertically */
+    left: 78%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the exact center */
+    color: #f43518; /* Assuming white text for contrast */
+    z-index: 105;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+    /* background-color: rgba(191,207,183,255); */
+    /* padding: 10px 20px;  */
+    text-align: center; 
+}
+
+.navbar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: inline-flex; /* Display items in a row */
+    justify-content: space-evenly; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    border-top: 1px solid #3a1f13; /* Top border line */
+    border-bottom: 1px solid #3a1f13;; /* Bottom border line */
+    width: 100%;
+    font-size: larger;
+}
+
+.navbar li {
+    margin: 0 10px; /* Space out the nav items */
+    position: relative; 
+}
+
+.navbar a {
+    color: #3a1f13; /* Light text for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);; /* Change color on hover */
+    background-color:rgba(191,207,183,255) ;
+}
+
+section {
+    /* border: solid 1px rgb(0,0,0); */
+    padding: 10px;
+    margin-top: 10px;
+    background-color:#ffffe4; 
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Creates the shadow */
+    transition: box-shadow 0.3s ease; 
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+section > *:first-child {
+    /* Add vertical padding for visual spacing */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it takes full width */
+    font-weight:900;
+    /* color: #73948f; */
+    color: #f43518;
+}
+
+#headings h1,
+#headings h2,
+#headings h3,
+#headings h4,
+#headings h5,
+#headings h6 {
+    margin: 20px 0; /* Adjust as needed */
+    padding: 0 20px; /* Horizontal padding for text */
+}
+
+pre {
+    overflow: auto; 
+    margin: 0;
+    color: #f7c108;
+}
+.code-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 20px auto; 
+    overflow: auto; /* In case of long lines of code */
+    background-color:#3a1f13;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+
+.code-header {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+.language-label {
+    font-weight: bold;
+}
+
+.copy-button, button {
+    cursor: pointer;
+    background-color:#f7c108;
+    color: #3a1f13;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.warning-button{
+    background-color:#f43518;
+    color: #ffffff;
+}
+
+.go-button{
+    background-color:#adbeaa;
+    color: #ffffff;
+}
+
+a{
+    color: #73948f;
+}
+
+form {
+    max-width: 500px; /* Adjust the width of the form */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Add some padding around the form */
+    background-color:#f7c108;
+}
+
+label {
+    display: block; /* Make label a block element to stack vertically */
+    margin-bottom: 15px; /* Add space between each form field */
+}
+
+label span {
+    display: block; /* Make span a block element */
+    margin-bottom: 5px; /* Space between the label text and the input */
+    font-weight: bold; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Make input take full width */
+    padding: 8px; /* Add some padding inside the input */
+    margin-bottom: 10px; /* Space below each input */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+textarea {
+    resize: vertical; /* Allows the textarea to be resized only vertically */
+    height: 100px; /* Initial height of the textarea */
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+}
