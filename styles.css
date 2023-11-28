@@ -1,19 +1,22 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
 
 :root {
     --color-background: #3a1f13 ;
     --color-foreground: #fef7ce;
-    --color-dark: #9f9d83;
-    --color-callout: #ffc800;
+    --color-dark: #73948f;
+    --color-primary: #ffc800;
+    --color-callout: #ea8d04;
     --color-success: #bfcfb7;
     --color-danger:#f43518;
     --color-info: #c5ab95;
+    --color-lightest: white;
     --padding: 20px;
     --font-stack: 'Helvetica Neue', sans-serif;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;900&display=swap');
-
-
+ 
 
 html {
     font-family: 'Montserrat Alternates';
@@ -284,3 +287,14 @@ form > div {
 .color-grid > div :hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+
+.page-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page-footer li {
+    list-style: none;
+}
+
