@@ -36,15 +36,15 @@ body {
 
 .floating-icon {
     position: fixed;
-    top: 10px; /* Adjust as per your requirement */
-    right: calc(50% - 350px - 75px); /* Half of viewport minus half of body width minus icon width/2 */
-    z-index: 1000; /* Ensure the icon stays above other content */
+    top: 10px;
+    right: calc(50% - 350px - 75px);
+    z-index: 1000;
 }
 
 .floating-icon img {
-    display: block; /* To remove any default spacing/margin around the image */
-    width: 100px; /* Adjust the size of the icon as needed */
-    height: auto; /* Maintain the aspect ratio of the image */
+    display: block;
+    width: 100px;
+    height: auto;
 }
 .header-image{
     width: 100%;
@@ -56,33 +56,33 @@ header {
 }
 
 .title1 {
-    position: absolute; /* Absolute position relative to header */
-    top: 5%; /* Centers vertically */
-    left: 68%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Adjusts the exact center */
-    color: #3a1f13; /* Assuming white text for contrast */
+    position: absolute;
+    top: 5%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    color: #3a1f13;
     z-index: 105;
     font-size: 50px;
     font-weight: 300;
 }
 
 .title2 {
-    position: absolute; /* Absolute position relative to header */
-    top: 20%; /* Centers vertically */
-    left: 75%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Adjusts the exact center */
-    color: #3a1f13; /* Assuming white text for contrast */
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #3a1f13;
     z-index: 105;
     font-size: 50px;
     font-weight: 300;
 }
 
 .subtitle {
-    position: absolute; /* Absolute position relative to header */
-    top: 35%; /* Centers vertically */
-    left: 78%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Adjusts the exact center */
-    color: #f43518; /* Assuming white text for contrast */
+    position: absolute;
+    top: 35%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    color: #f43518;
     z-index: 105;
     font-size: 15px;
     font-weight: 300;
@@ -90,62 +90,62 @@ header {
 }
 
 .navbar {
-    /* background-color: rgba(191,207,183,255); */
-    /* padding: 10px 20px;  */
+   
+   
     text-align: center; 
 }
 
 .navbar ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: inline-flex; /* Display items in a row */
-    justify-content: space-evenly; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    border-top: 1px solid #3a1f13; /* Top border line */
-    border-bottom: 1px solid #3a1f13;; /* Bottom border line */
+    border-top: 1px solid #3a1f13;
+    border-bottom: 1px solid #3a1f13;;
     width: 100%;
     font-size: larger;
 }
 
 .navbar li {
-    margin: 0 10px; /* Space out the nav items */
+    margin: 0 10px;
     position: relative; 
 }
 
 .navbar a {
-    color: #3a1f13; /* Light text for the links */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: 600; /* Make the text bold */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #3a1f13;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    /* color: rgb(255, 255, 255); */
+   
     background-color:#ffc800 ;
 }
 
 section {
-    /* border: solid 1px rgb(0,0,0); */
+   
     padding: 10px;
     margin-top: 10px;
     background-color:#ffffe4; 
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Creates the shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease; 
 }
 
 section:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 section > *:first-child {
-    /* Add vertical padding for visual spacing */
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure it takes full width */
+   
+    text-align: center;
+    width: 100%;
     font-weight:900;
-    /* color: #73948f; */
+   
     color: #f43518;
 }
 
@@ -155,23 +155,23 @@ section > *:first-child {
 #headings h4,
 #headings h5,
 #headings h6 {
-    margin: 20px 0; /* Adjust as needed */
-    padding: 0 20px; /* Horizontal padding for text */
+    margin: 20px 0;
+    padding: 0 20px;
 }
 
 pre {
     overflow: auto; 
     margin: 0;
-    /* color: #fffef9; */
+   
     color: #3a1f13;;
 
 }
 .code-container {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
     margin: 20px auto; 
-    overflow: auto; /* In case of long lines of code */
-    /* background-color:#3a1f13; */
-    /* background-color:#ffc800; */
+    overflow: auto;
+   
+   
     background-color:#adbeaa;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
@@ -191,8 +191,6 @@ pre {
 .copy-button, button {
     cursor: pointer;
     background-color:#f7c108;
-    color: #3a1f13;
-    /* background-color:#c5ab95; */
     color: #3a1f13;
     /* background-color:#3a1f13;
     color: #ffffff; */
@@ -223,20 +221,20 @@ a{
 }
 
 form {
-    max-width: 500px; /* Adjust the width of the form */
-    margin: 0 auto; /* Center the form */
-    padding: 20px; /* Add some padding around the form */
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
     background-color:#c5ab95;
 }
 
 label {
-    display: block; /* Make label a block element to stack vertically */
-    margin-bottom: 15px; /* Add space between each form field */
+    display: block;
+    margin-bottom: 15px;
 }
 
 label span {
-    display: block; /* Make span a block element */
-    margin-bottom: 5px; /* Space between the label text and the input */
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold; 
 }
 
@@ -244,16 +242,16 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-    width: 100%; /* Make input take full width */
-    padding: 8px; /* Add some padding inside the input */
-    margin-bottom: 10px; /* Space below each input */
-    border: 1px solid #ccc; /* Border for inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 textarea {
-    resize: vertical; /* Allows the textarea to be resized only vertically */
-    height: 100px; /* Initial height of the textarea */
+    resize: vertical;
+    height: 100px;
 }
 
 form > div {
