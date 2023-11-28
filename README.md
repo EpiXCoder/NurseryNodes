@@ -1,6 +1,4 @@
-# CSS Framework Starter Sample
+# Nursery Node - a CSS Framework 
 
-The HTML in this file can be used to test your CSS framework. 
-
-The HTML here contains a variety of markup that you might find in any web page.
+Nursery Node is a whimsical CSS framework designed with tiny tots in our lives in mind. 
  
