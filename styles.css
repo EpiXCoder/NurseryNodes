@@ -1,5 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap'); */
 
+:root {
+    --color-background: #3a1f13 ;
+    --color-foreground: #fef7ce;
+    --color-dark: #9f9d83;
+    --color-callout: #ffc800;
+    --color-success: #bfcfb7;
+    --color-danger:#f43518;
+    --color-info: #c5ab95;
+    --padding: 20px;
+    --font-stack: 'Helvetica Neue', sans-serif;
+}
   @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;900&display=swap');
 
 
@@ -91,8 +102,8 @@ header {
 }
 
 .navbar a:hover {
-    color: rgb(255, 255, 255);; /* Change color on hover */
-    background-color:rgba(191,207,183,255) ;
+    /* color: rgb(255, 255, 255); */
+    background-color:#ffc800 ;
 }
 
 section {
@@ -131,13 +142,17 @@ section > *:first-child {
 pre {
     overflow: auto; 
     margin: 0;
-    color: #f7c108;
+    /* color: #fffef9; */
+    color: #3a1f13;;
+
 }
 .code-container {
     width: 80%; /* Adjust the width as needed */
     margin: 20px auto; 
     overflow: auto; /* In case of long lines of code */
-    background-color:#3a1f13;
+    /* background-color:#3a1f13; */
+    /* background-color:#ffc800; */
+    background-color:#adbeaa;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 10px;
@@ -157,6 +172,10 @@ pre {
     cursor: pointer;
     background-color:#f7c108;
     color: #3a1f13;
+    /* background-color:#c5ab95; */
+    color: #3a1f13;
+    /* background-color:#3a1f13;
+    color: #ffffff; */
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -187,7 +206,7 @@ form {
     max-width: 500px; /* Adjust the width of the form */
     margin: 0 auto; /* Center the form */
     padding: 20px; /* Add some padding around the form */
-    background-color:#f7c108;
+    background-color:#c5ab95;
 }
 
 label {
@@ -220,4 +239,30 @@ textarea {
 form > div {
     display: flex;
     flex-direction: row;
+}
+
+.small-header-image{
+    max-width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.color-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.color-grid > div {
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    padding: 10px
+}
+
+.color-grid > div :hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }

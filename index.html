@@ -9,7 +9,6 @@
 	<header>
 		<h1 class="title1">Nursery</h1>
 		<h1 class="title2">Nodes</h1>
-		<h5 class="subtitle">CSS Framework</h5>
         <img src="header2.png" alt="Header Image" class="header-image">
     </header>
 	<!-- Page Navigation -->
@@ -232,7 +231,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 			<h1>Colors</h1>
 			<div class="color-grid">
 				
-				<div style="background-color: var(--color-background)">--color-background</div>
+				<div style="background-color: var(--color-background); color: white">--color-background</div>
 				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
 				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
 				
@@ -262,13 +261,60 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 		<section id="navbar">
 			<h1>Navbar</h1>
 			
-			<h2>Navbar 1</h2>
+			<h2>Navbar with a header</h2>
+			<p>A navbar with a header image and atitle superimposed on top of the header image</p>
+
+			<header>
+				<h1 class="title1">Title 1</h1>
+				<h1 class="title2">Title 2</h1>
+				<h5 class="subtitle">subtitle</h5>
+				<img src="header2.png" alt="Header Image" class="header-image">
+			</header>
+
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<div class="code-container">
+					<div class="code-header">
+						<button class="copy-button">Copy</button>
+					</div>
+				<pre class="code-block">
+					<code>
+&lt;header&gt;
+	&lt;h1 class=&quot;title1&quot;&gt;Title 1&lt;/h1&gt;
+	&lt;h1 class=&quot;title2&quot;&gt;Title 2&lt;/h1&gt;
+	&lt;h5 class=&quot;subtitle&quot;&gt;subtitle&lt;/h5&gt;
+	&lt;img src=&quot;header-image.png&quot; alt=&quot;Header Image&quot; class=&quot;header-image&quot;&gt;
+&lt;/header&gt;
+
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				</div>
+			</div>
+
+			<h2>Navbar without a header</h2>
 			<p>A navbar with all elements on the left.</p>
 			<p>Use a single child under <code>div.navbar</code>.</p>
 
 			<div class="navbar">
 				<ul>
-					<li><h1 class="nav-title">TITLE</h1></li>
+					<li><img src="header-avatar.png" alt="Header Image" class="small-header-image"></li>
+					<li><h1 class="nav-title">Title</h1></li>
 					<li><a href="#">Link 1</a></li>
 					<li><a href="#">Link 2</a></li>
 					<li><a href="#">Link 3</a></li>
@@ -285,6 +331,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 					<code>
 &lt;div class=&quot;navbar&quot;&gt;
 	&lt;ul&gt;
+	&lt;li&gt;&lt;img src=&quot;header-avatar.png&quot; alt=&quot;Header Image&quot; class=&quot;small-header-image&quot;&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;h1 class=&quot;nav-title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
@@ -296,6 +343,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 				</pre>
 				</div>
 			</div>
+
 
 		</section>
 		
